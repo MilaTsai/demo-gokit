@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31775a1f-c273-423a-b238-a212971b3864" name="Default Changelist" comment="">
+    <list default="true" id="31775a1f-c273-423a-b238-a212971b3864" name="Default Changelist" comment="Endpoint V01">
+      <change afterPath="$PROJECT_DIR$/Services/UserTransport.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/UserEnpoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/Services/UserEnpoint.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Endpoint V01" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endpoint V01" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -119,10 +123,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="235" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604897777904" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604897188752">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604910880629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604897188752" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910880629" />
     <state x="770" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604897785820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
