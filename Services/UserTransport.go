@@ -24,6 +24,7 @@ func DecodeUserRequest(ctx context.Context, r *http.Request) (interface{}, error
 
 func EncodeUserResponse(ctx context.Context, w http.ResponseWriter, response interface{}) error {
 	//將資料包裝為json格式
+	w.Header().Set("Content-type", "application/json")
 	return json.NewEncoder(w).Encode(response)
 
 }
