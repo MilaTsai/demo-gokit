@@ -18,6 +18,8 @@ func main() {
 	r.Handle("/user/{uid:\\d+}", serverHandler)
 	//r.Handle(`/user/{uid:\d+}`,serverHandler)
 
+	r.Methods("GET", "DELETE").Path(`/user/{uid:\d+}`).Handler(serverHandler)
+
 	http.ListenAndServe(":8080", r)
 
 }
