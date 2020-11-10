@@ -13,7 +13,7 @@ type UserResponse struct {
 	Result string `json:"result"`
 }
 
-func GenUserEnpoint(userService IUserService) endpoint.Endpoint {
+func GenUserEndpoint(userService IUserService) endpoint.Endpoint {
 
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 
