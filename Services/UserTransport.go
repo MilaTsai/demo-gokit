@@ -4,20 +4,21 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	mymux "github.com/gorilla/mux"
 	"net/http"
 	"strconv"
 )
 
 func DecodeUserRequest(ctx context.Context, r *http.Request) (interface{}, error) {
 	//判斷參數怎麼來的
-	//http://localhost:xxx/?uid=101
-	if r.URL.Query().Get("uid") != "" {
-		uid, _ := strconv.Atoi(r.URL.Query().Get("uid"))
-
+	vars := mymux.Vars(r)
+	if uid, ok := vars["uid"]; ok {
+		uid, _ := strconv.Atoi(uid)
 		return UserRequest{
 			Uid: uid,
 		}, nil
 	}
+
 	return nil, errors.New("參數錯誤")
 
 }
