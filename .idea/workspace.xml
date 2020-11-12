@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31775a1f-c273-423a-b238-a212971b3864" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/consul.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/consul.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/consul.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,8 @@
     <MESSAGE value="main.go V01：deploy http Service&#10;UserTransport.go V02: Content type is JSON" />
     <MESSAGE value="main.go V02：deploy RESTful Router(github.com/gorilla/mux)&#10;UserTransport.go V03: design RESTful Router format" />
     <MESSAGE value="Define different Http Method in the Service(GET and Delet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Define different Http Method in the Service(GET and Delet)" />
+    <MESSAGE value="consul.go" />
+    <option name="LAST_COMMIT_MESSAGE" value="consul.go" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -128,9 +127,10 @@
     </state>
     <state x="752" y="450" key="#GOROOT/0.0.1920.1040@0.0.1920.1040" timestamp="1604899038725" />
     <state x="564" y="386" key="#GOROOT/0.23.1440.839@0.23.1440.839" timestamp="1604910952656" />
-    <state x="296" y="23" width="847" height="841" key="CommitChangelistDialog2" timestamp="1604992425261">
-      <screen x="0" y="23" width="1440" height="842" />
+    <state x="296" y="23" width="847" height="841" key="CommitChangelistDialog2" timestamp="1605150157731">
+      <screen x="0" y="23" width="1440" height="840" />
     </state>
+    <state x="296" y="23" key="CommitChangelistDialog2/0.23.1440.840@0.23.1440.840" timestamp="1605150157731" />
     <state x="296" y="23" width="847" height="841" key="CommitChangelistDialog2/0.23.1440.841@0.23.1440.841" timestamp="1604977782613" />
     <state x="296" y="23" width="847" height="842" key="CommitChangelistDialog2/0.23.1440.842@0.23.1440.842" timestamp="1604992425261" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604891122911">
@@ -145,28 +145,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="750" y="216" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604896986783" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1605149968913">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1605153902313">
       <screen x="0" y="23" width="1440" height="841" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.841@0.23.1440.841" timestamp="1605149968913" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.841@0.23.1440.841" timestamp="1605153902313" />
     <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.23.1440.842@0.23.1440.842" timestamp="1605147142921" />
     <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.23.1440.843@0.23.1440.843" timestamp="1605000929421" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1605149968912">
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1605153902313">
       <screen x="0" y="23" width="1440" height="841" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.841@0.23.1440.841" timestamp="1605149968912" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.841@0.23.1440.841" timestamp="1605153902313" />
     <state width="1398" height="225" key="GridCell.Tab.0.center/0.23.1440.842@0.23.1440.842" timestamp="1605147142920" />
     <state width="1398" height="225" key="GridCell.Tab.0.center/0.23.1440.843@0.23.1440.843" timestamp="1605000929420" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1605149968912">
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1605153902312">
       <screen x="0" y="23" width="1440" height="841" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.841@0.23.1440.841" timestamp="1605149968912" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.841@0.23.1440.841" timestamp="1605153902312" />
     <state width="1398" height="225" key="GridCell.Tab.0.left/0.23.1440.842@0.23.1440.842" timestamp="1605147142919" />
     <state width="1398" height="225" key="GridCell.Tab.0.left/0.23.1440.843@0.23.1440.843" timestamp="1605000929418" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1605149968913">
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1605153902313">
       <screen x="0" y="23" width="1440" height="841" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.841@0.23.1440.841" timestamp="1605149968913" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.841@0.23.1440.841" timestamp="1605153902313" />
     <state width="1398" height="225" key="GridCell.Tab.0.right/0.23.1440.842@0.23.1440.842" timestamp="1605147142920" />
     <state width="1398" height="225" key="GridCell.Tab.0.right/0.23.1440.843@0.23.1440.843" timestamp="1605000929420" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1604891681928">
@@ -177,10 +177,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="235" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604897777904" />
-    <state x="414" y="228" key="Vcs.Push.Dialog.v2" timestamp="1604992432330">
-      <screen x="0" y="23" width="1440" height="842" />
+    <state x="414" y="228" key="Vcs.Push.Dialog.v2" timestamp="1605150165049">
+      <screen x="0" y="23" width="1440" height="840" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910880629" />
+    <state x="414" y="228" key="Vcs.Push.Dialog.v2/0.23.1440.840@0.23.1440.840" timestamp="1605150165049" />
     <state x="414" y="228" key="Vcs.Push.Dialog.v2/0.23.1440.841@0.23.1440.841" timestamp="1604977787732" />
     <state x="414" y="228" key="Vcs.Push.Dialog.v2/0.23.1440.842@0.23.1440.842" timestamp="1604992432330" />
     <state x="578" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604912903759">
